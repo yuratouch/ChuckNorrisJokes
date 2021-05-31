@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuck Norris Jokes</title>
+    <script src="https://kit.fontawesome.com/6d552ffc98.js" crossorigin="anonymous"></script>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<div class= "wrapper">
+    <div class="container">
+        <div id="main" class="main">
+            <h3>Hey!</h3>
+                <h4>Let's try to find a joke for you:</h4>
+                <form id="joke" class="form">
+                    <label>
+                        <input type="radio" value="random" name="joke__type" checked>
+                        Random
+                    </label>
+
+                    <label>
+                        <input type="radio" value="categories" name="joke__type">
+                        From caterogies
+                        <div id="categories"></div>
+                    </label>
+
+                    <label>
+                        <input type="radio" value="search" name="joke__type">
+                        Search
+                        <input class="search__input" type="text" id="searchInput" placeholder="Free text search...">
+                    </label>
+
+                    <button class="btn__getJoke">Get Joke</button>
+                </form>
+                <div id="jokes" class="all-jokes">
+                    <div id="all" class="all-style"></div>
+                </div>
+        </div>
+    </div>
+    <div class="fav-wrapper">
+        <div id="jokes" class="fav-jokes">
+            <h4>Favourites</h4>
+            <div id="favourites" class="fav-style"></div>
+        </div>
+    </div>
+
+</div>
+<script src="js/script.js" type="module"></script>
+
+</body>
+</html>

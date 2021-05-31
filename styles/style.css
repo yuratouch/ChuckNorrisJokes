@@ -1,0 +1,160 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #808080;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    background-color: #FFFFFF;
+}
+
+.main {
+    width: 80%;
+}
+
+.single-joke {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.all-jokes{
+    display: flex;
+    color: #808080;
+}
+
+.all-style{
+    width: 100%;
+}
+
+.fav-wrapper{
+    width: 35%;
+    background-color: #F5F5F5;
+}
+
+.fav-jokes{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#favourites .single-joke{
+    background-color:  #FFFFFF;
+    box-shadow: 5px 10px 6px -5px #808080;
+}
+
+.fav-style{
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.form>* {
+    margin-bottom: 15px;
+}
+
+.btns__style {
+    display:inline-block;
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #808080;
+    text-transform: uppercase;
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 3px 10px 7px 4px;
+    transition: 0.3s;
+}
+
+.btns__style:hover {
+    background-color: #F5F5F5;
+}
+
+.btn__getJoke {
+    width: 110px;
+    background-color: #0075ff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: white;
+    padding: 12px;
+    border: 0px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn__getJoke:hover {
+    background-color: #87CEEB;
+}
+
+.search__input {
+    width: 99%;
+    height: 24px;
+    border: 1px solid #F5F5F5;
+    border-radius: 5px;
+    padding-left: 7px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.search__input:focus-visible {
+    outline: 1px solid #87CEEB;
+}
+
+.joke-text {
+    color: black;
+}
+
+.joke-id {
+    font-size: 12px;
+}
+
+.joke-category {
+    margin: 0;
+}
+
+.joke-ava {
+    width: 30px;
+}
+
+.joke-date {
+    font-size: 10px;
+}
+
+.fav-btn {
+    border: none;
+    background-color: transparent;
+    color: red;
+    transition: 0.3s;
+
+}
+
+.fav-btn-container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fav-btn:hover {
+    transform: scale(1.5);
+}
